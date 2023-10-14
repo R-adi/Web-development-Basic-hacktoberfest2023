@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT_10</title>
+    <script src="ASSIGNMENT_10.js" defer></script>
+
+    <style>
+        .div1 {
+            background-color: rgb(141, 134, 123);
+            margin-left: 30%;
+            margin-right: 30%;
+            margin-top: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+        }
+
+        h2,h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .inp {
+            padding: 10px 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 20px;
+            width: 20%;
+        }
+
+        .btn {
+            margin: 0.5cm;
+            padding: 10px 20px;
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .output {
+            padding: 10px 20px;
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 20px;
+            width: 50%;
+        }
+
+        p {
+            font-family: cursive;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .div2{
+            border: rgb(98, 94, 94) solid 2px;
+            margin-right: 30%;
+            margin-left: 30%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <center>
+        
+        <div class="div1">
+
+            <h1><u>Transpose of a Matrix</u></h1>
+
+            <h2>Enter the number of rows</h2>
+            <input type="number" min="0" class="inp" id="rows">
+
+            <br>
+            <h2>Enter the number of columns</h2>
+            <input type="number" min="0" class="inp" id="columns">
+
+            <br><br>
+            <input type="button" class="btn" value="Create Matrix" onclick="show();">
+            <input type="button" class="btn" value="Transpose " onclick="transpose()">
+            <br><br>
+
+            <div class="div2">
+                <h2>The matrix is:</h2>
+                <p id="display1"></p>
+
+                <h2>The transpose is:</h2>
+                <p id="display2"></p>
+            </div>
+        </div>
+    </center>
+
+</body>
+
+</html>
